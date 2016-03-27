@@ -7,4 +7,4 @@ Este projeto foi feito para o estudo de Ruby on Rails, é baseado no tutorial do
 * [Acts as votable](https://github.com/cloudbsd/acts_as_votable)
 
 O projeto foi publicado no heroku e pode ser visto clicando no link abaixo
-####[Acessar Reddit]()
+####[Acessar Reddit](https://stark-anchorage-10566.herokuapp.com/)
