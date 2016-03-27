@@ -7,6 +7,22 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<% flash.each do |name, msg| %>
+		<%= content_tag(:div, msg, class: "alert alert-#{name}") %>
+	<% end %>
+
+	<% if user_signed_in? %>
+		<ul>
+			<li><%= link_to 'Enviar Link', new_link_path %></li>
+			<li><%= link_to 'Conta', edit_user_registration_path %></li>
+			<li><%= link_to 'Sair', destroy_user_session_path, :method => :delete %></li>
+		</ul>
+	<% else %>
+		<ul>
+			<li><%= link_to 'Cadastrar', new_user_registration_path %></li>
+			<li><%= link_to 'Entrar', new_user_session_path %></li>
+		</ul>
+	<% end %>
 
 <%= yield %>
 
