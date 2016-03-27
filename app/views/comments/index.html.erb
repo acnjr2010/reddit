@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Comments</h1>
+<h1>Listar Comentários</h1>
 
 <table>
   <thead>
@@ -18,9 +18,9 @@
         <td><%= comment.link_id %></td>
         <td><%= comment.body %></td>
         <td><%= comment.user %></td>
-        <td><%= link_to 'Show', comment %></td>
-        <td><%= link_to 'Edit', edit_comment_path(comment) %></td>
-        <td><%= link_to 'Destroy', comment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', comment %></td>
+        <td><%= link_to 'Editar', edit_comment_path(comment) %></td>
+        <td><%= link_to 'Deletar', comment, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +28,4 @@
 
 <br>
 
-<%= link_to 'New Comment', new_comment_path %>
+<%= link_to 'Novo Comentário', new_comment_path %>
